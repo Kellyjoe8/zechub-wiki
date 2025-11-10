@@ -23,7 +23,7 @@ function fetchData(url:any) {
 }
 
 export const HalvingMeter = () => {
-  const [halvingDate, setHalvingDate] = useState(0);
+  const halvingStartDate = new Date('2024-11-28');;
   const [currentBlock, setCurrentBlock] = useState(0);
   const [blocksToHalving, setBlocksToHalving] = useState(0);
   const [countDownDate, setCountDownDate] = useState(0);
