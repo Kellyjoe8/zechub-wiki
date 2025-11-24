@@ -10,8 +10,8 @@ export default function TotalSupplyChart() {
   const [data, setData] = useState<SupplyDataPoint[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch("/data/zcash/total_supply.json")
+  useEffect(() => { 
+    fetch("/data/zcash/total_supply.json")... }, []);
       .then((res) => res.json())
       .then((json: SupplyDataPoint[]) => {
         setData(json);
